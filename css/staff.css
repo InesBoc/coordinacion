@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Michroma&family=Rajdhani:wght@500&display=swap');
+
+:root{
+    --white: rgb(245, 243, 244);
+
+}
+
+
+
+body {
+    
+  
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(106,75,74,0.9668242296918768) 35%, rgba(244,239,239,1) 100%);
+    margin: 0;
+}
+
+header,
+main,
+footer { 
+    height: calc(100hv/3);
+    border: 5px;
+}
+header,
+footer {
+  background: radial-gradient(circle, rgba(235,23,8,1) 0%, rgba(27,21,20,1) 100%);
+  color: white;
+  padding: 20px 5px;
+  text-align: center;
+}
+
+
+/******* NAV *******/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    height: 2vh;
+    display: flex;
+    animation: move 1s ease-out;
+    transition-duration: 1s;
+
+}
+
+.brillo {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin-left: 40px;
+    margin-top: 30px;
+    height: 30px;
+}
+
+a { 
+    font-family: 'Chivo Mono', monospace;
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    margin: 10px;
+    padding: 30px 40px 0 40px;
+
+}
+
+.nav-link{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0 20px 0 20px;
+
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border: 5px solid #3366FF;
+    transition: 0.4s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+
+/******* TITULO HEADER *******/
+
+.tituloHeader{
+    position: relative;
+    display: flex;
+    font-family: 'Michroma', sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+    margin-left: 50px;
+    margin-top: 20px;
+    animation: move 1.5s ease-out;
+    transition-duration: 1s;
+
+}
+
+
+@keyframes move {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);}
+  }
+
+  /******* MAIN *******/
+
+  .main{
+    height: 100vh;
+  }
+
+  /******* SKILLS *******/
+  .sectionSkills {
+    height: 100vh;
+
+  }
+
+
+  /******* CONTACTO *******/
+  .sectionContacto{
+    height: 100vh;
+  }
+body{
+    
+    padding: 10px;
+    font-family: sans-serif;
+}
+button {
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    position: bottom;
+
+}
+
+.modal::backdrop{
+    background-color: rgba(5, 5, 5, 0.55);
+}
+/*.modal_conteiner {
+    background: rgb(89,69,222);
+background: radial-gradient(circle, rgba(89,69,222,1) 0%, rgba(209,98,245,1) 100%);
+   display: none;
+    max-width:  100ch;
+    
+    box-shadow: 0 px 2px 4px black;
+   opacity: 0;
+}*/
+.modal {
+    background: rgb(89,69,222);
+    background: radial-gradient(circle, rgba(89,69,222,1) 0%, rgba(209,98,245,1) 100%);
+    pointer-events: auto;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    color: rgb(240, 239, 239);
+    opacity: 1;
+}
+.grid {
+        display: grid;
+    grid-template-columns: 33% 33% 33%;
+   margin: 1rem;
+   
+    
+}
+.Columna2 {
+    
+    display: inline-block;
+    text-align: left; text-size-adjust: calc(100%);
+   
+    
+
+}
+.Titulo {
+    display: inline-block;
+    text-align: center; text-size-adjust: calc(100%);
+     
+
+}
+.grid3 {
+  margin: 0 2rem 1rem 2rem ;
+    display: grid;
+    text-align: left; text-size-adjust: 50% 50%;
+    grid-template-columns: 50% 50%;
+    
+
+}

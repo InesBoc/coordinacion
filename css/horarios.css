@@ -1,0 +1,33 @@
+body{
+    padding: 10px;
+    font-family: sans-serif;
+}
+button {
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    position: bottom;
+
+}
+
+.modal::backdrop{
+    background-color: rgba(0,0, 0,.55);
+}
+.modal_conteiner {
+    display: none;
+    max-width:  100ch;
+    
+    box-shadow: 0 px 2px 4px black;
+    opacity: 0;
+}
+.modal {
+    background: radial-gradient(circle, rgba(131,121,172,1) 0%, rgba(164,142,164,1) 100%);
+    pointer-events: auto;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    
+    opacity: 1;
+}
